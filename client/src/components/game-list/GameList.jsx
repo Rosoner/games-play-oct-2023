@@ -5,6 +5,7 @@ import GameListItem from './game-list-item/GameListItem';
 
 export default function GameList() {
     const [games, setGames] = useState([]);
+    // games => [{_id, title, img}, {_id, title, img}...]
 
     useEffect(() => {
         gameService.getAll()
